@@ -8,40 +8,36 @@
 	padding: 0;
    }
 }
-
-
-.playlist {
+.App {
   text-align: center;
 }
 
-
-.playlist-img {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-.playlist-img:hover {
-	box-shadow: 6px 6px 10px 0 rgba(4, 250, 4, 0.5)
-}
-
-
-
-
-.playlist-card {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} 
-
-
+.playlist {
+    text-align: center;
+  }
   
-
-
-
-
+  
+  .playlist-img {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  
+  .playlist-img:hover {
+      box-shadow: 6px 6px 10px 0 rgba(4, 250, 4, 0.5)
+  }
+  
+  
+  
+  
+  .playlist-card {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  } 
+  
