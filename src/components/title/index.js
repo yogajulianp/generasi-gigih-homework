@@ -1,6 +1,9 @@
-const Title = ({children}) => {
+import React from "react";
+import Style from "./style.module.css";
+
+const Title = ({children, props}) => {
     return (
-      <h2>{children}</h2>
+      <p {...props} className={Style.Title}>{children}</p>
     )
   }
   

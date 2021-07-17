@@ -1,6 +1,9 @@
-const Artist = ({children}) => {
+import React from "react";
+import Style from './style.module.css';
+
+const Artist = ({children, props}) => {
     return (
-      <div>
+      <div {...props} className={Style.artistName}>
         {children}
       </div>
     )

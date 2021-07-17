@@ -1,6 +1,9 @@
-const Album = ({children}) => {
+import React from "react";
+import Style from './style.module.css'
+
+const Album = ({children, props}) => {
     return (
-      <p>{children}</p>
+      <p {...props} className={Style.album}>{children}</p>
     )
   }
   

@@ -17,15 +17,10 @@
   }
   
   
-  .playlist-img {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  
-  .playlist-img:hover {
-      box-shadow: 6px 6px 10px 0 rgba(4, 250, 4, 0.5)
-  }
+.container {
+  flex: auto;
+  width: 50%;
+}
   
   
   

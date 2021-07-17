@@ -1,9 +1,10 @@
-import Style from "./style.css";
+import React from "react";
+import Style from "./style.module.css";
 
-const Image = ({imageUrl}) => {
+const Image = ({imageUrl, props}) => {
     return (
-      <img className={Style.Image} src={imageUrl} alt="play music"/>
+      <img {...props} className={Style.Image} src={imageUrl} alt="play music"/>
     );
-  }
+  };
   
   export default Image;

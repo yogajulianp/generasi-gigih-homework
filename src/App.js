@@ -1,42 +1,41 @@
 
+import React from "react";
 import './App.css';
-import data from "./components/data/index";
 import player from "./components/player/index";
 import Image from "./components/image/index";
 import Button from "./components/button/index";
 import Title from "./components/title/index";
 import Artist from "./components/artist/index";
 import Album from "./components/album/index";
+import data from "./data/trackdata";
+import calls from "./calls/index";
 
 function App() {
-  const {
-    album: {
-      images: [imgSrc],
-      artists: [artist],
-      name: albumName,
-    },
-    name: title,
-  } = data;
+  const musicCalls = data.map((call) => {
+    const {id, title, imgSrc, artist, albumName, spotify} = calls(call);
 
-  return (
-    <div className = "playlist">
-      <div className = "playlist-card" >
-        <h1>Play Music Now</h1>
+    return (
+      <div className="container">
         <player>
-          <Image imageUrl={imgSrc.url}/>
-          <Title>{title}</Title> 
-          <Artist>{artist.name}</Artist>
-          <Album>{albumName}</Album>
-          <Button>Select</Button>
+        <Title>{title}</Title> 
+        <Image imageUrl={imgSrc.url}/>
+        <Artist>{artist.name}</Artist>
+        <Album>{albumName}</Album>
+        <Button to={spotify}>Select</Button>
         </player>
       </div>
+    );
 
-    </div>
+  });
+
+  return (
+      <div className = "playlist">
+              <h1>Playlist Music Created</h1>
+              <div className = "playlist-card"> 
+              {musicCalls}
+              </div> 
+      </div>
   );
-
-
 }
-
-
 
 export default App;

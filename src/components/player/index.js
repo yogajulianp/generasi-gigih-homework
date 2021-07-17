@@ -1,7 +1,13 @@
-import Style from "./style.css";
+import React from "react";
+import Style from './style.module.css';
 
-const Player = ({ children }) => {
-  return <div className={Style.player}>{children}</div>;
+const Player = ({ children, ...props }) => {
+  return (
+       <div className={Style.Player} {...props}>
+         {children}
+        </div>
+  )
+  
 };
 
 export default Player;
