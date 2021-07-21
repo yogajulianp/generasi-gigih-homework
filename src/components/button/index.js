@@ -4,6 +4,7 @@ import Style from './style.module.css';
 
 const Button = ({ children,to, props }) => {
   return (
+    
     <button
       {...props}
       onClick={()=> window.open(to)}

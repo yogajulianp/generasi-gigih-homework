@@ -1,0 +1,15 @@
+
+  .plate__artist {
+    color: #544454
+  }
+  
+  .plate__album {
+    color: #744747;
+  }
+  .plate__image {
+    width: 70%;
+    border-radius: 0.3px;
+    object-fit: contain;
+    
+  }
+  

@@ -1,0 +1,24 @@
+.menu {
+    padding : 20 px 5px;
+    display: flex;
+    margin: auto;
+    background: #f05454;
+    padding: 5px 10px;
+    border-radius: 1px;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .menu button {
+    margin-bottom: 2px;
+  }
+  
+  .menu img {
+    object-fit: contain;
+    width: 50px;
+    border-radius: 45%;
+  }
+  
+ 
